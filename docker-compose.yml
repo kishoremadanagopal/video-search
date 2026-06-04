@@ -42,6 +42,16 @@ services:
     volumes:
       - ./backend:/app
 
+  worker:
+    build: ./worker
+    environment:
+      REDIS_URL: redis://redis:6379/0
+    depends_on:
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./worker:/app
+
 volumes:
   postgres_data:
   minio_data:
