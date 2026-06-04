@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+*.egg-info/
+.pytest_cache/
+
+# Node
+node_modules/
+.next/
+.vercel/
+*.log
+
+# Mac
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Data files (don't commit videos or models)
+*.mp4
+*.mp3
+*.wav
+*.webm
+*.mkv
+data/
+uploads/
+models/
