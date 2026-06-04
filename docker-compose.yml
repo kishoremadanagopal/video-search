@@ -35,6 +35,13 @@ services:
     volumes:
       - minio_data:/data
 
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+
 volumes:
   postgres_data:
   minio_data:
